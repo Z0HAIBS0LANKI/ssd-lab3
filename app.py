@@ -23,3 +23,6 @@ def get_user_data(user_id):
     conn = get_db()
     query = "SELECT * FROM users WHERE id = " + user_id
     return conn.execute(query).fetchall()
+
+
+# Updated login function
